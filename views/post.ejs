@@ -1,0 +1,10 @@
+<%- include('./partials/header') -%>
+<div class="postDiv">
+<h1><%= post.title %> </h1>
+    <form action="/delete/<%= post._id %> " method="POST">
+        <button type="submit" class="btnPost"> DELETE</button>
+    </form>
+</div><br><br>
+<p><%= post.content %> </p>
+
+<%- include('./partials/footer') -%> 
